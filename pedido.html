@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order</title>
+    <link rel="stylesheet" href="pedido.css">
+    <link rel="shortcut icon" type="image" href="./image/pngwing.com (3).png">
+</head>
+<body>
+    <div class="container">
+        <h1>Order</h1>
+        <form action="procesar_pedido.php" method="POST">
+            <div class="form-group">
+                <label for="nombre">Name:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="direccion">Adress:</label>
+                <input type="text" id="direccion" name="direccion" required>
+            </div>
+            <div class="form-group">
+                <label for="telefono">Phone number:</label>
+                <input type="tel" id="telefono" name="telefono" required>
+            </div>
+
+            <h2>Main course</h2>
+            <div class="form-group">
+                <label for="plato_principal">Select your main course:</label>
+                <select id="plato_principal" name="plato_principal[]" multiple required>
+                    <option value="arroz_frito">Sweet and sour pork</option>
+                    <option value="pollo_agridulce">Beef with broccoli</option>
+                    <option value="cerdo_a_la_bbq">Peking duck</option>
+                    <option value="fideos_lo_mein">Ramen</option>
+                    <option value="fideos_lo_mein">Beef with oyster sauce</option>
+                    <option value="fideos_lo_mein">Steamed fish with ginger and scallions</option>
+                    <option value="fideos_lo_mein">Sweet and sour shrimp</option>
+                    <option value="fideos_lo_mein">Cashew nut shrimp szechuan beef</option>
+                    <option value="fideos_lo_mein">Noodles and scallions</option>
+                    <option value="fideos_lo_mein">Sushi</option>
+                </select>
+            </div>
+
+            <h2>Starters</h2>
+            <div class="form-group">
+                <label for="entrada">Select your starters:</label>
+                <select id="entrada" name="entrada[]" multiple>
+                    <option value="rollitos_primavera">Spring rolls</option>
+                    <option value="sopa_wonton">Dumplings</option>
+                    <option value="dumplings">Spicy cucumber salad</option>
+                    <option value="dumplings">Hot and sour soup</option>
+                    <option value="dumplings">Shaomai</option>
+                    <option value="dumplings">Fish fritters</option>
+                </select>
+            </div>
+
+            <h2>Dessserts</h2>
+            <div class="form-group">
+                <label for="postre">Select your desserts:</label>
+                <select id="postre" name="postre[]" multiple>
+                    <option value="helado_frito">Fried ice cream</option>
+                    <option value="bolas_de_sesamo">Sesame seed balls</option>
+                    <option value="pastel_de_lotus">Mango pudding</option>
+                    <option value="pastel_de_lotus">Fried bananas with vanilla ice cream</option>
+                    <option value="pastel_de_lotus">Mooncakes</option>
+                    <option value="pastel_de_lotus">Durian pancakes</option>
+                    <option value="pastel_de_lotus">Mooncakes</option>
+                    <option value="pastel_de_lotus">Chilled mango sago cream with pomelo</option>
+                </select>
+            </div>
+
+            <h2>Vegan and Veggie</h2>
+            <div class="form-group">
+                <label for="vegano">Select your vegan/vegetarian dishes:</label>
+                <select id="vegano" name="vegano[]" multiple>
+                    <option value="tofu_agridulce">Hummus with breadsticks</option>
+                    <option value="verduras_salteadas">Stir-fried tofu with vegetables</option>
+                    <option value="ensalada_de_algas">Ensalada de Algas</option>
+                </select>
+            </div>
+
+            <h2>Beverages</h2>
+            <div class="form-group">
+                <label for="bebida">Select your drinks:</label>
+                <select id="bebida" name="bebida[]" multiple>
+                    <option value="te_verde">Green tea</option>
+                    <option value="refresco">Jasmine tea</option>
+                    <option value="cerveza_china">Red tea</option>
+                    <option value="refresco">Barley tea</option>
+                    <option value="refresco">Dragon well tea</option>
+                    <option value="refresco">Mineral Water</option>
+                    <option value="refresco">Fruit smoothies</option>
+                    <option value="refresco">Lemonade</option>
+                    <option value="refresco">Rice wine</option>
+                    <option value="refresco">Red wine</option>
+                    <option value="refresco">Rosé wine</option>
+                    <option value="refresco">White wine</option>
+                    <option value="refresco">Yellow wine</option>
+                    <option value="refresco">Beer</option>
+                    <option value="refresco">Baijiu</option>
+                    <option value="refresco">Shaoxing wine</option>
+                </select>
+            </div>
+            <h2>Specialties</h2>
+            <div class="form-group">
+                <label for="postre">Choose:</label>
+                <select id="postre" name="postre[]" multiple>
+                    <option value="helado_frito">Sichuan hot pot</option>
+                    <option value="bolas_de_sesamo">Cantonese roast pork</option>
+                    <option value="pastel_de_lotus">Kung pao chicken</option>
+                    <option value="pastel_de_lotus">Duck a l'orange</option>
+                    <option value="pastel_de_lotus">Beef chow fun</option>
+                    <option value="pastel_de_lotus">Yangzhou fried rice</option>
+                   
+                </select>
+            </div>
+
+           
+            <a href="recibimos.html" class="button">Order</a>
+        </form>
+    </div>
+</body>
+</html>
